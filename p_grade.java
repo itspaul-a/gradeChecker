@@ -20,7 +20,7 @@ class p_grade{
 	public static void getTotal(){
 
 		int n = getInput();
-		int total = 0;
+		float total = 0, avg;
 
 		for(int i=0; i<n; i++){
 			while(i<n){
@@ -34,6 +34,25 @@ class p_grade{
 				i++;
 			}
 		}
+
+		int possible = n * 100;
+
+		System.out.println(total);
+		System.out.println(possible);
+
+		avg = total / possible * 100; 
+
+		System.out.println("final grade is: " + avg);
+
+
+
+	}
+
+
+	public static void getPossible() {
+		
+		Scanner s = new Scanner(System.in);
+		System.out.println();
 
 
 	}
